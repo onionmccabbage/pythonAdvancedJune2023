@@ -5,15 +5,22 @@
 class Shape(): # every class inherits from 'object'
     '''A shape with num sides and colour'''
     def __init__(self, num_sides, colour=''): # every method of a class reqires 'self'
-        self.num_sides = num_sides
+        # we use name-mangling to 'hide' properties of the class
+        self.__num_sides = num_sides # double-underscore makes this hidden
+        # mini challenge:
+        # mangle the colour name
+        # write @property get/set methods for colour
+        # validate as a non-empty string
         self.colour    = colour
-    # we often use getter and setter methods
+    # we often use getter and setter methods (and decorators)
+    @property # this makes the next fubnvction into a 'getter'
     def sides(self):
-        return self.num_sides
+        return self.__num_sides
+    @sides.setter  # this makes the next function into a 'setter'
     def sides(self, num_sides):
         # here we can validate the num_sides
         if type(num_sides) == int and num_sides > 0:
-            self.num_sides = num_sides
+            self.__num_sides = num_sides
         else:
             raise Exception('number of sides must be a positive integer')
 
@@ -23,6 +30,6 @@ if __name__ == '__main__':
     # all classes will have intrinsic properties
     print( Shape.__name__ )
     # danger - every property of a class is accessible outside the class
-    s1.num_sides = False
-    print( s1.num_sides, s1.colour )
+    s1.__num_sides = False # this is NOT the mangled property it is just a abstract property
+    print( s1.__num_sides, s1.sides, s1.colour )
 
