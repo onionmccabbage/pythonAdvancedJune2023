@@ -42,7 +42,7 @@ if __name__ == '__main__':
     odd_l = list( filter( isOdd, range(-27, 28) ) )
     print( odd_l )
     # or we can make a generator
-    odd_g = filter( isOdd, range( -10**10, 10**10 ) )
+    odd_g = filter( isOdd, range( -10**3, 10**3 ) )
     print( odd_g.__next__() )
     print( odd_g.__next__() )
     print( odd_g.__next__() )
