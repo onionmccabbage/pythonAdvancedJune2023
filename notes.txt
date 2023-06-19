@@ -1,3 +1,90 @@
-Python Advanced June 2023
-=========================
+Python Advanced
+===============
+
+19-22 June 2023
+Toby Dussek
+
+
+9:30 start
+11:00 coffee
+12:30 lunch
+3:00 tea
+4:30 end
+
+- you will need: a copy of Python 3.x
+- a code editor: VS Code, PyCharm etc...
+- internet, able to install python libraries (e.g. requests library)
+
+Python code lives in classes (or in functions), in modules, which live in packages (folders)
+
+Monday
+- intro and welcome
+  - what do you currently know
+  - what do you want to know
+- classes 
+- abstract and concrete classes
+- validate types
+- inheritance
+- name mangled members
+- if __name__== '__main__': revisited
+- using decorators
+- after lunch review
+- instrinsics
+- functional programming: map, filter and reduce
+- functional programming: parameters
+- comprehensions, generators and yield
+- Loading local and remote data (requests)
+
+Tuesday
+- processing text/json
+  - json.loads() takes JSON and returns Python structure
+  - json.dumps() takes Python structure and returns JSON
+- persisting files: read/write/append/exclusive/overwrite
+- databases
+  see https://wiki.python.org/moin/DatabaseProgramming
+- other db connections (inc no-sql)
+- Create, Read and Update (and DELETE) - CRUD operations
+- populate db with sample data
+- read and nicely format values from the db
+- after lunch review exercise 
+  ask questions, help each other, share code (screen-share)
+- we will be using the 'requests' library
+  (you may come across the urllib.requests which is the old-skool way of doing things)
+
+Wednesday
+- context manager - switch context e.g. for handling data input and output
+- networking server/client (microservices)
+- overview of Flask
+- Testing: 
+  - doctest revisited
+  see https://docs.python.org/3/library/doctest.html
+  - unittest
+- after lunch lab exercise
+- pytest see https://docs.pytest.org/
+
+Thursday
+- profiling: timings etc. (cprofile)
+- multithreading
+- the global Interpreter Lock (GIL) will affect threading performance
+- using thread locks
+- Python has -O to optimize code (especially useful for threading)
+- after lunch lab exercise
+- logging - context mgr, often we log by time-stamp
+- named tuple
+- after lunch review
+- zip, deque, iter etc
+- end of course feedback
+	Easy Retro Form
+https://easyretro.io/publicboard/NTDqkkm6utgJFD9cdBrdb4sI6n72/ebb51231-c06c-46c4-8773-a0c150c95623
+Recordings usr neueda pwd c0nygre
+
+
+Other Useful Resources
+- https://pynative.com/python-exercises-with-solutions/
+- https://realpython.com/
+- moving from Py2 to Py3
+  https://docs.python.org/3/howto/pyporting.html
+
+
+
 
