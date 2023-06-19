@@ -32,7 +32,9 @@ Monday
 > functional programming: map, filter and reduce
 > functional programming: parameters
 > comprehensions, generators and yield
-- Loading local and remote data (requests)
+> Loading local and remote data (requests)
+
+NB all the recordings need username 'neueda' and password 'c0nygre'
 
 Tuesday
 - processing text/json
