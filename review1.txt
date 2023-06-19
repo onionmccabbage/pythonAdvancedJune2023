@@ -1,4 +1,4 @@
-Advanced Python Review Exercise 1
+Advanced Python Review Exercise 1 until 2:30
 =================================
 In a new module write a class called 'NumberFun' with one property, a positive integer
 Write decorated methods to get and set the property 
@@ -22,3 +22,8 @@ Use these functions in your __str__ method
 
 Extend your class into a new class that also takes a boolean values
 If the boolean is set to True, your __str__ method should also show todays date
+
+Super Optional
+--------------
+Build a separate class that imports your class then introspects the intrinsicts (e.g. dict etc)
+prints a nice summar of the class and some of its intrinsicts
