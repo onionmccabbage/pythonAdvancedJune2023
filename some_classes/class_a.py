@@ -7,11 +7,7 @@ class Shape(): # every class inherits from 'object'
     def __init__(self, num_sides, colour=''): # every method of a class reqires 'self'
         # we use name-mangling to 'hide' properties of the class
         self.__num_sides = num_sides # double-underscore makes this hidden
-        # mini challenge:
-        # mangle the colour name
-        # write @property get/set methods for colour
-        # validate as a non-empty string
-        self.colour    = colour
+        self.__colour    = colour # mangle the colour name
     # we often use getter and setter methods (and decorators)
     @property # this makes the next fubnvction into a 'getter'
     def sides(self):
@@ -23,6 +19,18 @@ class Shape(): # every class inherits from 'object'
             self.__num_sides = num_sides
         else:
             raise Exception('number of sides must be a positive integer')
+    @property
+    def colour(self):
+        return self.__colour
+    # @property get/set methods for colour
+    # @colour.setter
+    def colour(self, colour):
+        # validate as a non-empty string
+        if type(colour) == str and len(colour)>0:
+            self.__colour = colour
+        else:
+            raise Exception('Colour must be a non-empty string')
+
 
 if __name__ == '__main__':
     # we can make instances of our class
