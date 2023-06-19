@@ -31,7 +31,7 @@ Monday
 > instrinsics
 > functional programming: map, filter and reduce
 > functional programming: parameters
-- comprehensions, generators and yield
+> comprehensions, generators and yield
 - Loading local and remote data (requests)
 
 Tuesday
