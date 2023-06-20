@@ -10,6 +10,13 @@ def writeDB():
     INSERT INTO zoo
     VALUES ("Penguin", 16, 0.62)
     '''
+    # apply the SQL to the DB
+    try:
+        curs.execute(st) # at this point the SQL is sent to the database
+        conn.commit()    # ... any changes will now be commited
+        conn.close()     # tidy up
+    except Exception as err:
+        print(f'Problem: {err}')
 
 if __name__ == '__main__':
     writeDB()
