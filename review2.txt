@@ -1,9 +1,9 @@
-Advanced Python Review 2 
+Advanced Python Review 2 (until 3:00)
 ========================
 This is an opportunity to work with databases, or if you prefer 
 do the whole exercise with file read/write instead of databases
 
-In a new package, write a module to implement a database for 'posts'
+In a new package, write a module to implement a database (or file) for 'posts'
 You can use the following API to get a very large number of 'posts':
   https://jsonplaceholder.typicode.com/posts
 
