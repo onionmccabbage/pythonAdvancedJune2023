@@ -8,6 +8,7 @@ def main():
         print( type(all_j) ) # str
         # we can convert the string to a structure ( a list )
         all_l = json.loads(all_j) # loads ALL the json 
+        # json.load nd file access...
         # part_d = json.load(all_j)[0] # loads just element 0
         print(all_l, type(all_l) ) #, part_d, type(part_d))
     except Exception as err:
