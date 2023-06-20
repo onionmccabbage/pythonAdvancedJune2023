@@ -49,7 +49,7 @@ q - show an example using 'with' to auto tidy up
     > basic SQL statements
     - update existing data
 - other db connections (inc no-sql)
-- Create, Read and Update (and DELETE) - CRUD operations
+> Create, Read and Update (and DELETE) - CRUD operations
 - populate db with sample data
 - read and nicely format values from the db
 - after lunch review exercise 
