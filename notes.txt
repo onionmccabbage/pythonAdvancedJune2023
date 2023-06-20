@@ -12,6 +12,7 @@ Toby Dussek
 
 https://s3.eu-west-1.amazonaws.com/neueda.conygre.com/Sites/Ericsson_Advanced_Python/site/index.html
 NB access the recordings with username 'neueda' and password 'c0nygre'
+repo https://github.com/onionmccabbage/pythonAdvancedJune2023
 
 Python code lives in classes (or in functions), in modules, which live in packages (folders)
 
@@ -40,6 +41,7 @@ Tuesday
   - json.dumps() takes Python structure and returns JSON
 - persisting files: read/write/append/exclusive/overwrite
 q - how can we convert bytes back to plain text
+q - show completed solution for json.load
 - databases
   see https://wiki.python.org/moin/DatabaseProgramming
 - other db connections (inc no-sql)
