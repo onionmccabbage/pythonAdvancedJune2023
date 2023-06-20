@@ -15,7 +15,17 @@ def writeBytes(b):
     except Exception as err:
         print(f'oops {err}')
 
+def readBytes():
+    '''retrieve bytes from a byte file'''
+    fin = open('bfile', 'rb')
+    retrieved_b = fin.read()
+    fin.close()
+    return retrieved_b
+
+
 if __name__ == '__main__':
     v = range(0, 256)
     b = makeBytes(v)
     writeBytes(b)
+    r = readBytes()
+    print(  ) # this will attempt to print bytes...
