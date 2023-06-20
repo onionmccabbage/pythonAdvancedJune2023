@@ -5,13 +5,21 @@ def customRead():
     invalid = True
     while invalid:
         which_creature = input('which creature? ')
-        if type(which_creature==str and which_creature !=''):
+        if type(which_creature==str) and which_creature !='':
             invalid = False # quit the while loop
     conn = sqlite3.connect('my_db')
     curs = conn.cursor()
+    # SQL = will return exact match
+    # SQL LIKE allows wildcards (%)
+    # in SQL queries we can use '=' or 'IS'
+    # or we can use wild-cards:
+    # LIKE will ignore case
+    # LIKE "s%" anything beginning s
+    # LIKE "%s" anything ending s
+    # LIKE "%s%" anything containing s
     st = f'''
     SELECT creature, count, cost FROM zoo
-    WHERE creature = "{which_creature}"
+    WHERE creature LIKE "%{which_creature}%"
     '''
     try:
         curs.execute(st)
