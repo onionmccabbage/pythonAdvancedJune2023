@@ -58,7 +58,7 @@ q - show an example using 'with' to auto tidy up
   (you may come across the urllib.requests which is the old-skool way of doing things)
 
 Wednesday
-- context manager - switch context e.g. for handling data input and output
+> context manager - switch context e.g. for handling data input and output
 - networking server/client (microservices)
 - overview of Flask
 - Testing: 
