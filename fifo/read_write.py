@@ -9,7 +9,7 @@ def writeToTextFile(text):
     '''use a file access object to write lots of text content'''
     try:
         # 'xt' will only work if there is (e)xclusive file access
-        fout = open('my_log.txt', 'w') # 'wt' will (over)write, 'at' will append text (text is the default)
+        fout = open('my_log.txt', 'a') # 'wt' will (over)write, 'at' will append text (text is the default)
         size = len(text)
         offset = 0
         chunk  = 12
@@ -30,6 +30,22 @@ def writeToTextFile(text):
     finally: # this will always run, even if an exception occurs 
         pass
 
+# read back from a file
+def readFromFile():
+    '''use a file access object to read text'''
+    # we really should be using try-except here also
+    fin = open('my_log.txt', 'rt') # 'r' will read (t is default text)
+    # received = fin.read() # just read the whole lot back in - this could be s-l-o-w
+    # received = fin.readline() # read a line
+    received = fin.readlines() # read the whole lot back into a list of lines
+    fin.close() # tidy up
+    return received
+
 if __name__ == '__main__':
     t = 'we can persist very long strings of characters in a text file'
     writeToTextFile(t)
+    r = readFromFile()
+    print( r )
+    # can we strip the \n character?
+    for line in r:
+        print( line.strip(), end=', ' )
