@@ -41,6 +41,19 @@ def readFromFile():
     fin.close() # tidy up
     return received
 
+# we can seek within a file
+def seekContent(n=18):
+    ''' seek specific content within a text file'''
+    try:
+        fin = open('my_log.txt', 'rt')
+        fin.seek(n)
+        the_rest= fin.read()
+        fin.close()
+        return the_rest
+    
+    except Exception as err:
+        print(f'oops {err}')
+
 if __name__ == '__main__':
     t = 'we can persist very long strings of characters in a text file'
     writeToTextFile(t)
@@ -49,3 +62,5 @@ if __name__ == '__main__':
     # can we strip the \n character?
     for line in r:
         print( line.strip(), end=', ' )
+    s = seekContent(21)
+    print(s)
