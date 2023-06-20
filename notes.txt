@@ -37,24 +37,24 @@ Monday
 Tuesday
 - custom decorators
 > processing text/json
-  - json.loads() takes JSON and returns Python structure
-  - json.dumps() takes Python structure and returns JSON
+  > json.loads() takes JSON and returns Python structure
+  > json.dumps() takes Python structure and returns JSON
 > persisting files: read/write/append/exclusive/overwrite
-q - how can we convert bytes back to plain text
-q - show completed solution for json.load
+q > how can we convert bytes back to plain text
+q > show completed solution for json.load
 q - show an example using 'with' to auto tidy up
 > databases
   see https://wiki.python.org/moin/DatabaseProgramming
     > built-in sqlite3 database
     > basic SQL statements
-    - update existing data
-- other db connections (inc no-sql)
+    > update existing data
+> other db connections (inc no-sql)
 > Create, Read and Update (and DELETE) - CRUD operations
-- populate db with sample data
-- read and nicely format values from the db
-- after lunch review exercise 
+> populate db with sample data
+> read and nicely format values from the db
+> after lunch review exercise 
   ask questions, help each other, share code (screen-share)
-- we will be using the 'requests' library
+> we will be using the 'requests' library
   (you may come across the urllib.requests which is the old-skool way of doing things)
 
 Wednesday
