@@ -10,9 +10,8 @@ Toby Dussek
 3:00 tea
 4:30 end
 
-- you will need: a copy of Python 3.x
-- a code editor: VS Code, PyCharm etc...
-- internet, able to install python libraries (e.g. requests library)
+https://s3.eu-west-1.amazonaws.com/neueda.conygre.com/Sites/Ericsson_Advanced_Python/site/index.html
+NB access the recordings with username 'neueda' and password 'c0nygre'
 
 Python code lives in classes (or in functions), in modules, which live in packages (folders)
 
@@ -26,7 +25,7 @@ Monday
 > inheritance
 > name mangled members
 - if __name__== '__main__': revisited
-> using decorators
+> using built-in decorators
 > after lunch review
 > instrinsics
 > functional programming: map, filter and reduce
@@ -34,9 +33,8 @@ Monday
 > comprehensions, generators and yield
 > Loading local and remote data (requests)
 
-NB all the recordings need username 'neueda' and password 'c0nygre'
-
 Tuesday
+- custom decorators
 - processing text/json
   - json.loads() takes JSON and returns Python structure
   - json.dumps() takes Python structure and returns JSON
