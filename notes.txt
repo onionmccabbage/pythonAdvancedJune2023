@@ -42,6 +42,7 @@ Tuesday
 > persisting files: read/write/append/exclusive/overwrite
 q - how can we convert bytes back to plain text
 q - show completed solution for json.load
+q - show an example using 'with' to auto tidy up
 - databases
   see https://wiki.python.org/moin/DatabaseProgramming
     - built-in sqlite3 database
