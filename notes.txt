@@ -43,10 +43,11 @@ Tuesday
 q - how can we convert bytes back to plain text
 q - show completed solution for json.load
 q - show an example using 'with' to auto tidy up
-- databases
+> databases
   see https://wiki.python.org/moin/DatabaseProgramming
-    - built-in sqlite3 database
-    - basic SQL statements
+    > built-in sqlite3 database
+    > basic SQL statements
+    - update existing data
 - other db connections (inc no-sql)
 - Create, Read and Update (and DELETE) - CRUD operations
 - populate db with sample data
