@@ -58,8 +58,11 @@ q - show an example using 'with' to auto tidy up
   (you may come across the urllib.requests which is the old-skool way of doing things)
 
 Wednesday
+- brief review so far
 > context manager - switch context e.g. for handling data input and output
 - networking server/client (microservices)
+  - could use docker etc.
+  - run on same hardware, talk to each other
 - overview of Flask
 - Testing: 
   - doctest revisited
