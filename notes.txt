@@ -71,6 +71,7 @@ Mini challenge
 - Testing: 
   - doctest revisited
   see https://docs.python.org/3/library/doctest.html
+  q - fix the ellipsis example
   - unittest
 > after lunch lab exercise
 - pytest see https://docs.pytest.org/
