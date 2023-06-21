@@ -50,16 +50,20 @@ def al():
 
 # we can make our server a proxy for other content
 # here we will retrieve data from JSONPLACEHOLDER based on the parameters passed in
+@app.route('/data') # a good idea to allow rouite with NO arguments too
 @app.route('/data/<cat>') # specify a category and return ALL json from that category
 @app.route('/data/<cat>/<id>') # sa category and id then return json for unique id
 def data(cat='albums', id=''):
-    apiUrl = f'https://jsonplaceholder.typicode.com/{cat}/{id}'
+    if id=='':
+        apiUrl = f'https://jsonplaceholder.typicode.com/{cat}'
+    else:
+        apiUrl = f'https://jsonplaceholder.typicode.com/{cat}/{id}'
     response = requests.get(apiUrl)
-    response_j = response.json() # or html, text etc
+    response_l = response.json() # or html, text etc
+    response_j = json.dumps(response_l)
+    # response_j = response.json() # or html, text etc
     # we could do some pre-procesing, e.g. filter, clean, authenticate...
     return response_j
-
-
 
 if __name__ == '__main__':
     app.run() # start the flask server
