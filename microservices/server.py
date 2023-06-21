@@ -1,6 +1,6 @@
 # we can build a socket server
 import socket # this provides all we need for socket programming
-
+from datetime import datetime
 def server():
     '''this microservice will listen for request, respond to request
        and be available over an http port '''
@@ -21,13 +21,21 @@ def server():
         buf = client.recv(1024)
         # we can choose to send a response
         print(f'Server received {buf}')
-        client.send( buf.upper() ) # send it back in upper case
+        if buf==b'date':
+            date = datetime.now()
+            client.send( f'{date}'.encode() ) # we would format the date
+        elif buf==b'time':
+            time = datetime.now().strftime("%H:%M:%S")
+            client.send( f'{time}'.encode() ) # we would format the time
+        else:        
+            client.send( buf.upper() ) # send it back in upper case
         client.close()
         # if the client sends b'quit' then we will close the server
         if buf == b'quit':
             print('server is closing')
             server.close()
             break
+        
 
 if __name__ == '__main__':
     server()

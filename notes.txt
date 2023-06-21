@@ -63,6 +63,9 @@ Wednesday
 - networking server/client (microservices)
   - could use docker etc.
   - run on same hardware, talk to each other
+Mini challenge
+- if the client send 'date' server responds with todays date
+- if the client send 'time' server reposnds with the current time
 - overview of Flask
 - Testing: 
   - doctest revisited

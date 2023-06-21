@@ -10,7 +10,7 @@ def client():
     client.connect(port_t)
     # send a message to the server
     # check to see if additional arguments were passed in
-    if len(sys.argv > 1):
+    if len(sys.argv) > 1:
         message = ' '.join(sys.argv[1:]) # ignore the module name!
     else:
         message = 'default message'
