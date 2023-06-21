@@ -66,7 +66,7 @@ Wednesday
 Mini challenge
 - if the client send 'date' server responds with todays date
 - if the client send 'time' server reposnds with the current time
-- overview of Flask
+> overview of Flask
   see https://flask.palletsprojects.com/en/2.2.x/quickstart/
 - Testing: 
   - doctest revisited
