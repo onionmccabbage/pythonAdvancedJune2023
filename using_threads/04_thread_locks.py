@@ -1,4 +1,5 @@
 # in this example two functions will battle over a single asset
+# NB run this with -0 for best performance
 
 import threading
 import time
