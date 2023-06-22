@@ -1,7 +1,7 @@
 # a service to access https://swapi.co/api
 import requests
 
-class SwapiService:
+class SwapiService(object):
     def __init__(self):
         pass
     @staticmethod
