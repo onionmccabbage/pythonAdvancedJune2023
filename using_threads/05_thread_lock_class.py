@@ -11,7 +11,7 @@ class TicketSeller(threading.Thread):
     def __init__(self, lock): # make a global thread lock available
         threading.Thread.__init__(self)
         self.__lock = lock
-        print('Ticket seller has started sellnig tickets')
+        print('Ticket seller has started selling tickets')
     def run(self):
         global ticketsAvailable
         running = True
@@ -40,7 +40,7 @@ def main():
         sellers_l.append(seller)
         seller.start()
     for seller in sellers_l:
-        seller()
+        seller.join()
     end = time.time()
     print(f'Total time {end-start}')
 
