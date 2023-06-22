@@ -12,7 +12,7 @@ It is used by passing parameters for 'category' and 'id' e.g.
 Category can be any one of 'people', 'planets', 'species'. 'starships' or 'vehicles' 
 (maybe use a named tuple for these)
 The id can be in the range 1-12 (though some id values currently fail)
-NB Vehicles is problematic, but id=30 works. Handle problems with exception handlers etc.
+NB Vehicles is problematic, but id=7 works. Handle problems with exception handlers etc.
 
 Either ask the user for a category and an id, or read values in from a data file or sys.argv
 In all cases, check they are valid then make a get request and show the returned json
