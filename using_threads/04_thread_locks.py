@@ -40,6 +40,7 @@ if __name__ == '__main__':
     # initially try working sequentially
     # workerA()
     # workerB()
+    # NB a Thread is not an actual system thread, it is a thread access object
     tA = threading.Thread(target=workerA)
     tB = threading.Thread(target=workerB)
     # both threads try to access the SAME asset - this is dangerous and unpredicable

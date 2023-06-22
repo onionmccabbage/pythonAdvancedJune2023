@@ -10,7 +10,7 @@ def server():
     port_t = ('localhost', 9874) # or a fixed IP address
     server.bind(port_t)
     # set our server to listen
-    server.listen()
+    server.listen(4) # listen for up to 4 clients
     print(f'Server is running on {port_t[0]} port {port_t[1]}')
     # we need a run loop
     while True:
