@@ -18,8 +18,8 @@ def squares(a, b):
     '''return the square of every number from a to b
     >>> squares(1, 6)
     [1, 4, 9, 16, 25]
-    >>> squares(1, 11)
-    [1, 4, ..., 100] # doctest: +ELLIPSIS
+    >>> squares(1, 11) # doctest: +ELLIPSIS
+    [1, 4, ..., 100] 
     '''
     answer_l = []
     for i in range(a, b):

@@ -43,3 +43,5 @@ As soon as their 'category/id' request returns, make further (threaded)
 requests for each film in the returned data set
 
 Add 'Swapi' functionality to your microservice or Flask app from before
+
+Consider what unit tests you could write
