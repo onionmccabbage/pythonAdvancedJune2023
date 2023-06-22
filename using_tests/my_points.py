@@ -35,7 +35,7 @@ class Point():
 if __name__ == '__main__':
     p1 = Point(5, 7)
     print( p1.display() ) # (5, 7)
-    p1.moveBy(-2, -3)
+    # p1.moveBy(-2, -3)
     print( p1.display() ) # (3, 4)
     print( p1.hypot() ) # 5.0
     # p2 = Point(True, False)

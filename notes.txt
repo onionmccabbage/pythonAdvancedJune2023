@@ -71,12 +71,13 @@ Mini challenge
 - Testing: 
   - doctest revisited
   see https://docs.python.org/3/library/doctest.html
-  q - fix the ellipsis example
   - unittest
 > after lunch lab exercise
 - pytest see https://docs.pytest.org/
 
 Thursday
+q - fix the ellipsis example
+- complete the unit test for Point class
 - profiling: timings etc. (cprofile)
 - multithreading
 - the global Interpreter Lock (GIL) will affect threading performance
