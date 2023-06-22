@@ -81,9 +81,9 @@ q - fix the ellipsis example
 - complete the unit test for Point class
 - profiling: timings etc. (cprofile)
 > multithreading
-- the global Interpreter Lock (GIL) will affect threading performance
+> the global Interpreter Lock (GIL) will affect threading performance
 > using thread locks
-- Python has -O to optimize code (especially useful for threading)
+> Python has -O to optimize code (especially useful for threading)
 - after lunch lab exercise
 - logging - context mgr, often we log by time-stamp
 - named tuple
