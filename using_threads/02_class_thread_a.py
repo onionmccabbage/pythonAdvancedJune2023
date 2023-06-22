@@ -17,7 +17,6 @@ class MyClass(Thread):
 
 def main():
     start = time.time()
-    c1 = MyClass(1)
     thread_l = []
     for i in range(8):
         thread_l.append( MyClass(i) )
